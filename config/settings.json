@@ -1,0 +1,27 @@
+{
+  "platform": "Raspberry Pi 4 Model B",
+  "operating_system": "Raspberry Pi OS 64-bit",
+  "i2c_bus": 1,
+  "bme280_address": "0x76",
+  "bme280_alternate_address": "0x77",
+  "led_gpio_bcm": 17,
+  "sensor_limits": {
+    "temperature_c": {
+      "min": -10.0,
+      "max": 60.0
+    },
+    "humidity_percent": {
+      "min": 0.0,
+      "max": 100.0
+    },
+    "pressure_hpa": {
+      "min": 300.0,
+      "max": 1100.0
+    }
+  },
+  "sampling": {
+    "samples": 5,
+    "interval_seconds": 0.2,
+    "temperature_max_spread_c": 2.0
+  }
+}
